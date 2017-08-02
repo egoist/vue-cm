@@ -12,6 +12,12 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "codemirror",
+    "code",
+    "editor",
+    "vue"
+  ],
   "scripts": {
     "test": "npm run lint",
     "lint": "xo",
