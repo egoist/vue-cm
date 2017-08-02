@@ -65,6 +65,7 @@ export default {
 
 - `value`: `string` Editor value
 - `options`: `object` CodeMirror instance options
+- `preserveScrollPosition` `default: false`: Preserve previous scroll position after updating value.
 
 ### Events
 
