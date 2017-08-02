@@ -1,6 +1,6 @@
 {
   "name": "vue-cm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CodeMirror component for Vue.js",
   "repository": {
     "url": "egoist/vue-cm",
