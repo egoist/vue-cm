@@ -43,7 +43,6 @@
     "codemirror": "^5.28.0",
     "eslint-config-rem": "^3.0.0",
     "poi": "^9.1.4",
-    "vue-test-utils": "^0.5.0",
     "xo": "^0.18.0"
   },
   "xo": {
