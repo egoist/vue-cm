@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import CodeMirror from '../src'
 import 'codemirror/mode/javascript/javascript'
-import 'codemirror/mode/markdown/markdown'
+import 'codemirror/mode/gfm/gfm'
 
 import 'codemirror/lib/codemirror.css'
 
@@ -40,7 +40,7 @@ new Vue({
   methods: {
     updateEditor() {
       this.code = markdownCode
-      this.options.mode = 'markdown'
+      this.options.mode = 'gfm'
       this.$refs.editor.focus()
     }
   },
