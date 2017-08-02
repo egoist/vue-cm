@@ -1,0 +1,58 @@
+{
+  "name": "vue-cm",
+  "version": "0.0.0",
+  "description": "CodeMirror component for Vue.js",
+  "repository": {
+    "url": "egoist/vue-cm",
+    "type": "git"
+  },
+  "main": "dist/cm.common.js",
+  "cdn": "dist/cm.min.js",
+  "unpkg": "dist/cm.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "build": "npm run build:cjs && npm run build:umd",
+    "build:cjs": "bili --filename cm",
+    "build:umd": "bili --filename cm --format umd,umdCompress --external codemirror --module-name VueCodeMirror",
+    "example": "poi",
+    "build:example": "poi build",
+    "gh": "gh-pages -d example/dist",
+    "deploy": "npm run build:example && npm run gh"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "/"
+  },
+  "dependencies": {
+    "codemirror": "^5.28.0",
+    "fast-deep-equal": "^1.0.0"
+  },
+  "devDependencies": {
+    "bili": "^0.17.0",
+    "eslint-config-rem": "^3.0.0",
+    "gh-pages": "^1.0.0",
+    "poi": "^9.1.4",
+    "vue-test-utils": "^0.5.0",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem/prettier",
+    "rules": {
+      "unicorn/filename-case": 0
+    },
+    "ignores": [
+      "example/**"
+    ],
+    "envs": [
+      "browser"
+    ]
+  }
+}
