@@ -41,6 +41,7 @@ new Vue({
     updateEditor() {
       this.code = markdownCode
       this.options.mode = 'markdown'
+      this.$refs.editor.focus()
     }
   },
 
