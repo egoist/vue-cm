@@ -38,11 +38,11 @@
     "homepage": "/"
   },
   "dependencies": {
-    "codemirror": "^5.28.0",
     "fast-deep-equal": "^1.0.0"
   },
   "devDependencies": {
     "bili": "^0.17.0",
+    "codemirror": "^5.28.0",
     "eslint-config-rem": "^3.0.0",
     "gh-pages": "^1.0.0",
     "poi": "^9.1.4",
