@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/vue-cm.svg?style=flat)](https://npmjs.com/package/vue-cm) [![NPM downloads](https://img.shields.io/npm/dm/vue-cm.svg?style=flat)](https://npmjs.com/package/vue-cm) [![CircleCI](https://circleci.com/gh/egoist/vue-cm/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/vue-cm/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
 
-*[CodeMirror](https://codemirror.net/) is a versatile text editor implemented in JavaScript for the browser. *
+*[CodeMirror](https://codemirror.net/) is a versatile text editor implemented in JavaScript for the browser.*
 
 **NOTE:** I'm aware of the existence of [vue-codemirror](https://github.com/surmon-china/vue-codemirror), but I built this one for good reasons:
 
