@@ -24,9 +24,8 @@ CDN: [UNPKG](https://unpkg.com/vue-cm/dist/) | [jsDelivr](https://cdn.jsdelivr.n
 ```vue
 <template>
   <code-mirror 
-    :code="code"
-    :options="options"
-    @change="updateCode">
+    v-model="code"
+    :options="options">
   </code-mirror>
 </template>
 
@@ -48,17 +47,22 @@ export default {
         mode: 'javascript'
       }
     }
-  },
-
-  methods: {
-    updateCode(newValue) {
-      this.code = newValue
-    }
   }
 }
 </script>
 
 <style src="codemirror/lib/codemirror.css"></style>
+```
+
+`v-model` for components is just a syntax sugar of:
+
+```diff
+<code-mirror 
+-  v-model="code"
++  :value="code"
++  @change="newValue => { code = newValue }"
+  :options="options">
+</code-mirror>
 ```
 
 ### Props

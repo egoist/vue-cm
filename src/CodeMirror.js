@@ -4,6 +4,10 @@ import deepEqual from 'fast-deep-equal'
 export default {
   name: 'CodeMirror',
 
+  model: {
+    event: 'change'
+  },
+
   props: {
     value: String,
     options: Object,
