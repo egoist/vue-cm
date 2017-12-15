@@ -10,6 +10,7 @@
 - No unnecessary abstractions, which means simpler API.
 - Prebuilt bundle, you can use it with or without a bundler.
 - More modern-ish.
+- Simply better.
 
 ## Install
 
