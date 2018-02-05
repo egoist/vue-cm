@@ -68,6 +68,8 @@ export default {
     this.codemirror.on('blur', () => this.$emit('blur'))
     this.codemirror.on('scroll', cm => this.$emit('scroll', cm.getScrollInfo()))
     this.codemirror.on('cursorActivity', cm => this.$emit('cursorActivity', cm))
+    
+    this.$emit('mounted', this.codemirror)
   },
 
   beforeDestroy() {
